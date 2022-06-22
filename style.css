@@ -1,0 +1,419 @@
+/* EN CSS UTILIZAMOS ESTOS SIMBOLOS PARA OCULTAR LOS COMENTARIOS*/
+
+/* SELECTOR UNIVERSAL / * {} resetea los estilos por default*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* FORMAS DE AGREGAR ESTILOS A MIS ETIQUETAS HTML */
+
+/* 1-DIRECTAMENTE A LA ETIQUETA */
+/*
+selector {
+    propiedad: valor;
+}
+*/
+
+
+/*dispositivos mobile*/
+
+@media screen and (max-width: 480px) {
+    body {
+    background-color: red;}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481) and (max-width: 960px){
+    body {
+        background-color: rgb(136, 69, 69);
+    }
+}
+
+/*Desktop*/
+@media only screen and (max-width: 960px) {
+    body {
+        background-color:  rgb(226, 241, 241);
+    }
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "cabecera"
+    "cuerpo"
+    "pie"
+
+}
+.cuerpo{
+    background-color: rgb(226, 241, 241);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-gap: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: rgb(245, 240, 234);
+    margin-top: 0; 
+    width: 100vw;
+    height: 10vw;
+    padding: 4% 2% 2% 2%;
+    
+    
+}
+.medlogo {
+    width: 50px;
+    position: fixed;
+    margin-top: -5px;
+    left: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.cabecera{
+    position:fixed;
+    top: 0vw;
+}
+.cabecera__titulo{
+    padding-bottom: 2%;
+    padding-left: 12%;
+    color:rgb(67, 18, 112);
+    font-family: "calibri";
+    font-size: 30px;
+}
+
+
+.cabecera__lista__item {
+    font-family: "calibri";    
+}
+    
+    
+
+    
+    
+.cuerpo{
+    background-color: rgb(226, 241, 241);
+    padding-top: 0%;
+}
+.cuerpos{
+    padding-top: 3%;
+}
+
+
+
+
+/*
+.cabecera__lista__item--submenu {
+    display: inline;
+    margin: 3%;
+    position: relative;
+}
+.cabecera__lista__item--submenu:hover .cabecera__lista__item__submenu{
+    display: block;
+}
+
+.cabecera__lista__item__submenu{
+    list-style: none;
+    position:absolute;
+    border: solid 1px rgb(136, 77, 77);
+    right: -2px;
+    display: none
+}*/
+
+/* 2- CLASES - ES UN ATRIBUTO QUE NOS PERMITE INDIVIDUALIZAR
+A LOS ELEMENTOS HTML */
+.enlace{
+    color:rgb(3, 3, 33);
+    text-decoration: none
+    
+}
+/* DISPPLAY */
+
+.cabecera__lista{
+    height: 20vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.cabecera__lista__item{
+    height: 20vh;
+    width: 10%;
+    display: flex;
+    margin: 6%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+    
+}
+
+.galeria{
+    /*height: 100vh;*/
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;/*Opcional por que es el default*/
+      justify-content: space-evenly;
+      margin-left: 3%;
+      padding-top: 15%;
+      
+}
+.derecha{
+      align-self: flex-end;
+      flex-direction: row-reverse;
+}
+  
+  
+  
+.galeria__imagen{
+      height: 40vh;
+      width: 22vh;
+      object-fit: cover;
+      border-radius: 5%;
+      box-shadow: 7px 13px 37px #000;
+      
+  
+}
+  
+.galeria__card{
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+}
+  
+.formacion{
+      list-style-type: disc;
+}
+  
+.galeria__card__texto{
+      padding-left: 25px;
+      
+}
+  
+.galeria__card__titulo{
+      display: flex;
+      align-items: center;
+      padding-left: 25px;
+}
+
+
+
+
+main{
+    /*margin-top: 12.7vw;*/
+      background-color: rgb(226, 241, 241);
+}
+.mision{
+      color:rgb(67, 18, 112);
+      padding-top: 3%;
+      font-family: "calibri";
+}
+.titulo {
+      color:rgb(67, 18, 112);
+      padding-top: 3%;
+      font-family: "calibri";
+}
+  
+  
+  /* 3- ID */
+#productos {
+      background-color: rgb(123, 123, 128);
+}
+.contacto {
+    padding-top: 3%;
+    color:rgb(67, 18, 112);
+}
+
+
+/*   turnos  */
+.turnos {
+    padding-top: 3%;
+    color:rgb(67, 18, 112);
+    
+}
+
+.form-register {
+    width: 400px;
+    background-color: #445d76;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-family: "calibri";
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "calibri";
+    font-size: 15px;
+}
+
+.form-register .botons {
+    width: 40%;
+    border-radius: 5px;
+    background-color: rgb(10, 99, 158);
+    font-family: "calibri";
+    font-size: 100%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.cancelacion {
+    font-family: "calibri";
+
+}
+
+
+
+
+/* 3- ID */
+#productos {
+    background-color: rgb(123, 123, 128);
+}
+
+/* absolute: px
+   relativas: rem, %, vh, vw
+*/   
+.procedimiento {
+    width: 50vw;
+    height: 30vw;
+    margin: 5vw;
+    border-radius: 30px;
+   
+}
+.procedimiento-uno:hover {
+    transition: all 4s;
+    transform: scale(1.2);
+}
+.procedimiento-dos:hover {
+    transition: all 4s;
+    transform: scale(1.2);
+}
+.procedimiento-tres:hover {
+    transition: all 4s;
+    transform: scale(1.2);
+}
+.procedimiento-cuatro:hover {
+    transition: all 4s;
+    transform: scale(1.2);
+}
+.boton a {
+    text-decoration: none;
+    color:whitesmoke;   
+}
+
+
+.boton {
+    
+    background-color: #42417F;
+    
+ 
+ /* width: 200px;
+    height: 50px; */
+    width: fit-content; 
+    
+ /*  margin - padding - border */
+    
+    border-radius: 5%;
+  /*padding-top: 10%;
+    padding-right: 20%;
+    padding-bottom: 20%;
+    padding-left: 15%;
+    
+    padding: 10% 20% 20% 15% */
+    
+    padding: 10px 40px;
+
+    margin: 20px auto;
+}
+
+   
+    
+/* -CSS - HOJA DE ESTILO EN CASCADA */
+header nav ul li {
+    list-style-type: none;
+}
+
+/* VARIAS ETIQUETAS, CLASS QUE COMPARTEN LAS MISMAS PROPIEDADES 
+PERO NO ESTAN EN LA MISMA CASCADA */
+
+/* .enlace-azul {
+    color: blue;
+}
+
+.parrafo-azul {
+    color: blue;
+} 
+SE AGRUPAN DE LA SIGUIENTE FORMA*/
+
+.enlace-azul, .parrafo-azul {
+    color:rgb(67, 18, 112);
+    text-decoration: none;
+}
+
+.enlace-naranja, .parrafo-naranja{
+    color:rgb(255, 170, 0);
+}
+
+
+/* LOS ELEMENTOS EN BLOQUE OCUPAN EL 100% DE LA PANTALLA.
+   LOS ELEMENTOS EN LINEA OCUPAN EL ESPACIO DE SU CONTENIDO*/
+/*
+.paragraph {
+    background-color: blueviolet;*/
+    /*FUENTES*/ /*CAMBIA LA FORMA DE LAS LETRAS*/
+   /*font-family: 'Nanum Pen Script', cursive;
+}*/
+/*
+em{
+    background-color: blue;
+}*/
+
+/* OTRA FORMA DE ADQUIRIR TIPOS DE LETRAS DIFERENTES:
+  FONTS.GOOGLE.COM   */
+
+footer {
+    background-color: rgb(197, 237, 243);
+    color: rgb(40, 84, 181);
+    text-decoration: none;
+    height: 5vw;
+}
+.facelogo {
+    width: 50px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    border-radius: 10px;
+}
