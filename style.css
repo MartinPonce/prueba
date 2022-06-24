@@ -116,7 +116,6 @@ header {
 
 
 
-
 /*
 .cabecera__lista__item--submenu {
     display: inline;
@@ -311,6 +310,7 @@ main{
     height: 30vw;
     margin: 5vw;
     border-radius: 30px;
+    box-shadow: 7px 13px 37px #000;
    
 }
 .procedimiento-uno:hover {
